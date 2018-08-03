@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("registry/hellonode")
+        app = docker.build("registry:5001/hellonode")
     }
 
     stage('Test image') {
